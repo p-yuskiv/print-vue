@@ -1,0 +1,20 @@
+[
+  {
+    "sku": "businesscards",
+    "active": true,
+    "titleSingle": "Visitekaartje",
+    "titlePlural": "Visitekaartjes"
+  },
+  {
+    "sku": "flyers",
+    "active": true,
+    "titleSingle": "Flyer",
+    "titlePlural": "Flyers"
+  },
+  {
+    "sku": "posters",
+    "active": true,
+    "titleSingle": "Poster",
+    "titlePlural": "Posters"
+  }
+]
