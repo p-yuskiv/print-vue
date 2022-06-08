@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router';
     }
 
     .back-button {
-        margin-top: 30px;
+        margin: 30px 0;
         padding: 20px 40px;
     }
 }

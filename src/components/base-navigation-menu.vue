@@ -36,6 +36,10 @@ const props = defineProps<{
     --active-item-color: var(--palette-50);
     --active-item-bg: var(--palette-400);
 
+    &:focus-within {
+        outline: unset;
+    }
+
     .nav-menu-link {
         color: var(--item-color);
         background-color: var(--item-bg);

@@ -1,7 +1,9 @@
 <template>
     <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="logo">Awesome<span class="accented">Logo</span></div>
+            <RouterLink class="logo" to="/" aria-hidden>
+                Awesome<span class="accented">Logo</span>
+            </RouterLink>
             <address>
                 <p>Some address</p>
                 <p>Some phone</p>

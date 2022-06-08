@@ -27,7 +27,6 @@ const navigateTo = (productSku: string) => router.push(`/product/${productSku}`)
                         v-for="product of products"
                         :key="product.sku"
                         class="product-item"
-                        tabindex="0"
                         @keypress.enter.self="navigateTo(product.sku)"
                     >
                         <RouterLink
