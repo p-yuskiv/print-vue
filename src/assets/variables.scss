@@ -1,0 +1,37 @@
+:root {
+    /* screen breakpoints */
+    --extra-size: 1920px;
+    --desktop-size: 1280px;
+    --tablet-size: 768px;
+    --phone-size: 360px;
+
+    /* container sizes */
+    --container-extra-size: 1600px;
+    --container-desktop-size: 1100px;
+    --container-tablet-size: 600px;
+    --container-phone-size: 350px;
+
+    --palette-50: #e0f2f1;
+    --palette-100: #b2dfdb;
+    --palette-200: #80cbc4;
+    --palette-300: #4db6ac;
+    --palette-400: #26a69a;
+    --palette-500: #009688;
+    --palette-600: #00897b;
+    --palette-700: #00796b;
+    --palette-800: #00695c;
+    --palette-900: #004d40;
+    --palette-A100: #a7ffeb;
+    --palette-A200: #64ffda;
+    --palette-A400: #1de9b6;
+    --palette-A700: #00bfa5;
+
+    --primary-color: var(--palette-900);
+    --accent-color: #fff;
+    --disabled-color: #000;
+
+    --main-bg: var(--palette-50);
+    --header-bg: var(--palette-200);
+    --disabled-bg: grey;
+    --dangerous-bg: #e57373;
+}

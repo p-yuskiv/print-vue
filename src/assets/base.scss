@@ -1,0 +1,107 @@
+.container {
+    --container-size: var(--container-extra-size);
+
+    max-width: var(--container-size);
+    margin: 0 auto;
+    padding: 0 40px;
+    --extra-size: 1920px;
+
+    $medias: 1280px 'desktop' 30px, 768px 'tablet' 20px,
+    360px 'phone' 10px;
+
+    @each $width, $name, $padding in $medias {
+        @media screen and (max-width: $width) {
+            --container-size: var(--container-#{$name}-size);
+            padding: 0 $padding;
+        }
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--primary-color);
+    background-color: var(--main-bg);
+}
+
+a,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.btn,
+button,
+a.btn {
+    --button-color: inherit;
+    --button-bg: transparent;
+    --button-border-color: transparent;
+    
+    color: var(--button-color);
+    background-color: var(--button-bg);
+
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &-primary {
+        --button-color: var(--palette-900);
+        --button-bg: var(--palette-A200);
+    }
+
+    &-secondary {
+        --button-color: var(--palette-900);
+        --button-bg: var(--palette-A100);
+    }
+
+    &-disabled,
+    &[disabled] {
+        --button-color: var(--palette-900);
+        --button-bg: var(--palette-100);
+        opacity: 0.5;
+    }
+}
+
+.input-text {
+    --input-text-border-color: transparent;
+
+    border: 1px solid var(--input-text-border-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--scrollbar-thumb-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hovered-bg);
+}
