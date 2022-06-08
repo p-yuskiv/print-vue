@@ -190,10 +190,6 @@ const getCustomOption = (option: ISelectOption<{ option: IPropertyOption }>) => 
 
 <style scoped lang="scss">
 .product-selector {
-    --scrollbar-width: 10px;
-    --scrollbar-thumb-bg: #888;
-    --scrollbar-thumb-hovered-bg: #555;
-
     --list-unselected-bg: var(--palette-200);
     --list-valid-bg: var(--palette-300);
     --list-invalid-bg: var(--dangerous-bg);

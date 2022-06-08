@@ -122,7 +122,6 @@ const handleAddToCart = () => {
     .product-name {
         font-size: 36px;
         font-weight: 900;
-        text-decoration: underline;
     }
 
     .selector-form {

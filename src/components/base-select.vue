@@ -33,6 +33,7 @@ const handleSelect = (selected: ISelectOption) => {
                 v-for="(option, index) of props.options"
                 :key="option.value"
                 @click="handleSelect(option)"
+                @keyup.enter="handleSelect(option)"
                 :class="[
                     'base-select-list-item',
                     { disabled: option.disabled },
@@ -41,6 +42,7 @@ const handleSelect = (selected: ISelectOption) => {
                 aria-role="option"
                 :aria-selected="Boolean(option.value === props.modelSelected?.value)"
                 :aria-disabled="Boolean(option.disabled)"
+                tabindex="0"
             >
                 <slot
                     :index="index"
